@@ -1,11 +1,11 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 function Message(){
   return(
     <>
-    <div className="container " style={{paddingLeft:"10rem"}}>
+    <div className="container message-container">
     <div className="row pt-5 ">
-     <div className="col-4 shadow " style={{marginRight:"1rem"}}>
+     <div className="col-lg-4 message-row shadow " style={{marginRight:"1rem"}}>
      <div className="d-flex justify-content-between col-10">
      <p><u>PRIMARY</u></p>
      <p>GENERAL</p>
@@ -14,13 +14,15 @@ function Message(){
      </div>
      <hr/>
      <div className="d-inline-flex col-10 justify-content-between" >
-            <div className="d-inline-flex col-7 justify-content-around">
+          <Link className="text-decoration-none" to={"/texts"}>
+          <div className="d-inline-flex col-7 justify-content-around">
               <img className="shadow bg-light " style={{ padding: "0.1rem", borderRadius: "50%", width: "3rem", height: "3rem" }} src="https://th.bing.com/th/id/OIP.usyIo3PSmABci5aaOZO0egHaLG?w=203&h=304&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="" />
               <div >
               <li className="pt-1 text-dark" style={{listStyle:"none",fontWeight:"600"}}>Rahul Sharma</li>
-              <p className="text-black-50 " style={{fontSize:"0.9rem", fontWeight:"600"}}>Hey! How r u Bro?</p>
+              <p className="text-black-50 " style={{fontSize:"0.9rem", fontWeight:"600"}}>How r u Bro?</p>
               </div>
-            </div>           
+            </div>   
+          </Link>        
             
      </div>
 
@@ -101,14 +103,14 @@ function Message(){
             <i class="fa-solid fa-circle fa-xs text-primary pt-3" style={{fontSize:"0.5rem"}}></i>
      </div>
      </div>
-     <div className="col-7 shadow-lg pt-3">
+     <div className="col-lg-7 shadow-lg pt-3">
      <div className="d-flex justify-content-between col-12">
      <div className="d-flex justify-content-around col-3">
      <img className="shadow bg-light " style={{ padding: "0.1rem", borderRadius: "50%", width: "2rem", height: "2rem" }} src="https://th.bing.com/th/id/OIP.usyIo3PSmABci5aaOZO0egHaLG?w=203&h=304&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="" />
      <li className="pt-1 text-dark" style={{listStyle:"none",fontWeight:"600"}}>Rahul Sharma</li>
      </div>
     
-   <div className="d-inline-flex col-4 pt-3 justify-content-around">
+   <div className="d-inline-flex col-lg-4 pt-3 justify-content-around">
    <i class="fa-solid fa-phone"></i>
      <i class="fa-solid fa-video"></i>
      <i class="fa-solid fa-circle-info"></i>
@@ -120,7 +122,7 @@ function Message(){
      <img className="shadow bg-light mt-3 " style={{ padding: "0.1rem", borderRadius: "50%", width: "1.5rem", height: "1.5rem",marginRight:"0.6rem" }} src="https://th.bing.com/th/id/OIP.usyIo3PSmABci5aaOZO0egHaLG?w=203&h=304&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="" />
 < div style={{border:"1.2px solid lightgray",borderRadius:"3rem",width:"20%",backgroundColor:"lightgray"}}  >
 <div className="text-center ">
-<p className="text-dark pt-1" style={{fontSize:"0.9rem", fontWeight:"600"}}>Hey! How r u Bro?</p>
+<p className="text-dark pt-1" style={{fontSize:"0.9rem", fontWeight:"600"}}>How r u Bro?</p>
     </div>
 </div>
 

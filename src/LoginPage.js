@@ -14,13 +14,13 @@ function LoginPage() {
   }
   return (
     <>
-      <div className="row w-100">
+      <div className="row w-100 login-page-Container">
         <div className="col-lg-6 col-md-6 col-sm-12 phone ">
           <img className=" iphone" src={require("./assests/iphone.png")} alt="" />
           <img src={require("./assests/screenshot1-2x.png")} className="bg-img feed" alt="" />
         </div>
         <div className="col-lg-6 col-md-6 col-sm-12 ">
-          <div className="container login-container shadow bg-light">
+          <div className="container login-container">
             <div className="text-center pb-5">
               <img className="" style={{ height: "5rem" }} src="https://logos-world.net/wp-content/uploads/2020/04/Instagram-Logo-2010-2013.png" alt="" />
             </div>
